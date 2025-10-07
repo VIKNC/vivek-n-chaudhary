@@ -800,7 +800,7 @@
             color: var(--accent-color);
         }
 
-        /* Contact Section - From index.html */
+        /* Contact Section - Updated for Formspree */
         .contact-content {
             max-width: 600px;
             margin: 0 auto;
@@ -1404,11 +1404,16 @@
             </div>
         </section>
 
-        <!-- Contact Section - From index.html -->
+        <!-- Contact Section - FIXED for Formspree -->
         <section id="contact" class="section">
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
                 <form class="contact-form" action="https://formspree.io/f/mrbyagjb" method="POST">
+                    <!-- Essential Formspree hidden fields -->
+                    <input type="hidden" name="_subject" value="New Portfolio Contact from Vivek's Website">
+                    <input type="hidden" name="_replyto" value="viveknchaudhary@gmail.com">
+                    <input type="hidden" name="_captcha" value="false">
+                    
                     <div class="form-group">
                         <label for="name">Full Name *</label>
                         <input 
@@ -1433,7 +1438,6 @@
                             placeholder="Your Email" 
                             required 
                             aria-label="Your email address"
-                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                         >
                     </div>
                     <div class="form-group">
@@ -1475,9 +1479,8 @@
     </footer>
 
     <script>
-        // Portfolio functionality object - From index.html
+        // Portfolio functionality - CLEANED for Formspree (no form interference)
         const Portfolio = {
-            // Initialize all functionality
             init() {
                 this.setupSmoothScrolling();
                 this.setupScrollAnimations();
@@ -1487,7 +1490,6 @@
                 this.setupExternalLinks();
             },
             
-            // Smooth scrolling for navigation
             setupSmoothScrolling() {
                 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                     anchor.addEventListener('click', function (e) {
@@ -1507,11 +1509,8 @@
                 });
             },
             
-            // Setup external links to open in new tabs
             setupExternalLinks() {
-                // Automatically detect external links and add proper attributes
                 document.querySelectorAll('a[href^="http"], a[href^="https"], a[href^="tel:"], a[href^="mailto:"]').forEach(link => {
-                    // For http/https links, open in new tab
                     if (link.href.startsWith('http')) {
                         link.setAttribute('target', '_blank');
                         link.setAttribute('rel', 'noopener noreferrer');
@@ -1519,64 +1518,6 @@
                 });
             },
             
-            // Enhanced form handling
-            
-            // Form validation
-            {
-                const name = form.querySelector('#name');
-                const email = form.querySelector('#email');
-                const message = form.querySelector('#message');
-                let isValid = true;
-                
-                // Remove existing error messages
-                form.querySelectorAll('.error-message').forEach(msg => msg.remove());
-                
-                // Validate name
-                if (!name.value.trim() || name.value.length < 2) {
-                    this.showFieldError(name, 'Please enter a valid name (at least 2 characters)');
-                    isValid = false;
-                }
-                
-                // Validate email
-                const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
-                if (!email.value.trim() || !emailPattern.test(email.value)) {
-                    this.showFieldError(email, 'Please enter a valid email address');
-                    isValid = false;
-                }
-                
-                // Validate message
-                if (!message.value.trim() || message.value.length < 10) {
-                    this.showFieldError(message, 'Please enter a message (at least 10 characters)');
-                    isValid = false;
-                }
-                
-                return isValid;
-            },
-            
-            // Show field-specific error
-             {
-                const errorDiv = document.createElement('div');
-                errorDiv.className = 'error-message';
-                errorDiv.textContent = message;
-                errorDiv.style.marginTop = '0.5rem';
-                errorDiv.style.fontSize = '0.9rem';
-                errorDiv.setAttribute('role', 'alert');
-                
-                field.parentNode.appendChild(errorDiv);
-                field.focus();
-                field.setAttribute('aria-invalid', 'true');
-                
-                // Remove error when user starts typing
-                field.addEventListener('input', function removeError() {
-                    if (errorDiv.parentNode) {
-                        errorDiv.remove();
-                    }
-                    field.removeAttribute('aria-invalid');
-                    field.removeEventListener('input', removeError);
-                });
-            },
-            
-            // Scroll animations
             setupScrollAnimations() {
                 const observerOptions = {
                     threshold: 0.1,
@@ -1591,13 +1532,11 @@
                     });
                 }, observerOptions);
                 
-                // Observe all fade-in elements
                 document.querySelectorAll('.fade-in, .experience-card').forEach(el => {
                     observer.observe(el);
                 });
             },
             
-            // Mobile menu functionality
             setupMobileMenu() {
                 const hamburger = document.querySelector('.hamburger');
                 const navLinks = document.querySelector('.nav-links');
@@ -1607,15 +1546,12 @@
                     navLinks.classList.toggle('active');
                     hamburger.classList.toggle('active');
                     
-                    // Update ARIA attributes
                     hamburger.setAttribute('aria-expanded', !isOpen);
                     navLinks.setAttribute('aria-hidden', isOpen);
                     
-                    // Prevent body scroll when menu is open
                     document.body.style.overflow = !isOpen ? 'hidden' : '';
                 });
                 
-                // Close menu when clicking on a link
                 document.querySelectorAll('.nav-links a').forEach(link => {
                     link.addEventListener('click', () => {
                         navLinks.classList.remove('active');
@@ -1626,7 +1562,6 @@
                     });
                 });
                 
-                // Close menu on escape key
                 document.addEventListener('keydown', (e) => {
                     if (e.key === 'Escape' && navLinks.classList.contains('active')) {
                         navLinks.classList.remove('active');
@@ -1638,7 +1573,6 @@
                     }
                 });
                 
-                // Handle resize
                 window.addEventListener('resize', () => {
                     if (window.innerWidth > 768 && navLinks.classList.contains('active')) {
                         navLinks.classList.remove('active');
@@ -1650,10 +1584,8 @@
                 });
             },
             
-            // Header scroll effect
             setupHeaderScroll() {
                 const header = document.querySelector('.header');
-                let lastScrollTop = 0;
                 
                 window.addEventListener('scroll', () => {
                     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -1663,14 +1595,10 @@
                     } else {
                         header.classList.remove('scrolled');
                     }
-                    
-                    lastScrollTop = scrollTop;
                 });
             },
             
-            // Accessibility enhancements
             setupAccessibility() {
-                // Skip link functionality
                 const skipLink = document.createElement('a');
                 skipLink.href = '#main-content';
                 skipLink.textContent = 'Skip to main content';
@@ -1694,7 +1622,6 @@
                 });
                 document.body.insertBefore(skipLink, document.body.firstChild);
                 
-                // Improve keyboard navigation for custom elements
                 document.querySelectorAll('.btn, .social-link').forEach(element => {
                     element.addEventListener('keydown', (e) => {
                         if (e.key === 'Enter' || e.key === ' ') {
@@ -1704,16 +1631,13 @@
                     });
                 });
                 
-                // Set initial ARIA attributes
                 document.querySelector('.hamburger').setAttribute('aria-expanded', false);
                 document.querySelector('.nav-links').setAttribute('aria-hidden', false);
             }
         };
         
-        // Initialize when DOM is ready
         document.addEventListener('DOMContentLoaded', Portfolio.init.bind(Portfolio));
         
-        // Handle reduced motion preference
         if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
             document.documentElement.style.setProperty('--transition-smooth', 'none');
             document.documentElement.style.setProperty('--transition-fast', 'none');
