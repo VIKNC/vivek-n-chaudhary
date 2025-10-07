@@ -1480,7 +1480,6 @@
             // Initialize all functionality
             init() {
                 this.setupSmoothScrolling();
-                this.setupFormHandling();
                 this.setupScrollAnimations();
                 this.setupMobileMenu();
                 this.setupHeaderScroll();
@@ -1521,63 +1520,9 @@
             },
             
             // Enhanced form handling
-            setupFormHandling() {
-                const form = document.querySelector('.contact-form');
-                const submitBtn = form.querySelector('.submit-btn');
-                const btnText = submitBtn.querySelector('.btn-text');
-                
-                form.addEventListener('submit', function (e) {
-                    e.preventDefault();
-                    
-                    // Validate form
-                    if (!Portfolio.validateForm(this)) {
-                        return;
-                    }
-                    
-                    // Show loading state
-                    const originalText = btnText.textContent;
-                    btnText.textContent = 'Sending...';
-                    submitBtn.disabled = true;
-                    
-                    // Remove any existing messages
-                    const existingMessages = this.querySelectorAll('.success-message, .error-message');
-                    existingMessages.forEach(msg => msg.remove());
-                    
-                    // Simulate form submission
-                    setTimeout(() => {
-                        // Create success message
-                        const successMessage = document.createElement('div');
-                        successMessage.className = 'success-message';
-                        successMessage.innerHTML = `
-                            <strong>Message sent successfully!</strong><br>
-                            Thank you for reaching out. I'll get back to you within 24 hours.
-                        `;
-                        successMessage.setAttribute('role', 'alert');
-                        successMessage.setAttribute('aria-live', 'polite');
-                        
-                        this.appendChild(successMessage);
-                        this.reset();
-                        
-                        // Reset button
-                        btnText.textContent = originalText;
-                        submitBtn.disabled = false;
-                        
-                        // Remove success message after 8 seconds
-                        setTimeout(() => {
-                            if (successMessage.parentNode) {
-                                successMessage.remove();
-                            }
-                        }, 8000);
-                        
-                        // Focus back to first form field for screen readers
-                        this.querySelector('input').focus();
-                        
-                    }, 1500);
-                });
-            },
             
             // Form validation
-            validateForm(form) {
+            {
                 const name = form.querySelector('#name');
                 const email = form.querySelector('#email');
                 const message = form.querySelector('#message');
@@ -1609,7 +1554,7 @@
             },
             
             // Show field-specific error
-            showFieldError(field, message) {
+             {
                 const errorDiv = document.createElement('div');
                 errorDiv.className = 'error-message';
                 errorDiv.textContent = message;
