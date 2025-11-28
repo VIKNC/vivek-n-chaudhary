@@ -529,17 +529,21 @@
             align-items: start;
         }
 
+/* Profile Card in About Section */
         .profile-card {
             background: var(--gray);
             border: 1px solid var(--border);
             padding: 3rem;
             text-align: center;
             transition: all 0.3s ease;
+            position: relative;
+            z-index: 2;
         }
 
         .profile-card:hover {
             background: var(--light-gray);
             border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
         }
 
         .profile-img {
@@ -558,8 +562,9 @@
         }
 
         .profile-card h3 {
-            margin: 2rem 0 1rem 0;
+            margin: 1.5rem 0 1rem 0;
             font-size: 1.2rem;
+            color: var(--white);
         }
 
         .contact-info {
@@ -569,7 +574,8 @@
         }
 
         .contact-info p {
-            margin: 0.5rem 0;
+            margin: 0.8rem 0;
+            line-height: 1.6;
         }
 
         .contact-info a {
@@ -587,6 +593,7 @@
             justify-content: center;
             gap: 1rem;
             margin-top: 2rem;
+            flex-wrap: wrap;
         }
 
         .social-link {
@@ -607,8 +614,8 @@
             background: var(--white);
             color: var(--black);
             border-color: var(--white);
+            transform: translateY(-2px);
         }
-
         .about-text {
             color: rgba(255, 255, 255, 0.7);
             line-height: 1.8;
