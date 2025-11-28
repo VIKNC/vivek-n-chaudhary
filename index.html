@@ -1074,6 +1074,21 @@
                 padding-left: 1rem;
             }
 
+            /* Additional grid positioning for blueprints */
+            .grid .card::after {
+                max-width: 350px;
+            }
+            
+            @media (max-width: 1200px) {
+                .card::after {
+                    opacity: 0.02 !important;
+                }
+                
+                .card:hover::after {
+                    opacity: 0.05 !important;
+                }
+            }
+
             /* Hide blueprints on mobile for performance */
             .card::after {
                 display: none;
@@ -1210,8 +1225,35 @@
                     </div>
                 </div>
                 <div class="about-text">
-                    <!-- About text content here -->
-                </div>
+    <p>
+        I am currently pursuing my <span class="highlight">Master's in Project Management</span> at Northeastern University 
+        College of Professional Studies, building upon my strong foundation in <span class="highlight">Mechanical Engineering</span> 
+        from Dr. D.Y. Patil School of Engineering.
+    </p>
+    <p>
+        With practical experience as a <span class="highlight">New Product Development Engineer</span> at Dhananjay Group, 
+        I have successfully led multiple automotive component development projects from concept to production, 
+        including work on <span class="highlight">India's first CNG-powered motorcycle</span> - the Bajaj Freedom 125.
+    </p>
+    
+    <h3>Current Focus Areas</h3>
+    <ul>
+        <li>Project Planning & Scheduling (MS Project, Gantt Charts, Milestones, WBS)</li>
+        <li>Risk Management & Mitigation Strategies</li>
+        <li>Agile & Hybrid Methodologies</li>
+        <li>Stakeholder Communication & Team Leadership</li>
+        <li>Cost Estimation, Budgeting, and Earned Value Management (EVM)</li>
+        <li>Organizational Culture & Strategic Alignment of Projects</li>
+        <li>Project Lifecycle Management and Technical Project Leadership</li>
+    </ul>
+
+    <p>
+        My passion lies in bridging the gap between <span class="highlight">technical innovation</span> and 
+        <span class="highlight">project management excellence</span>, with a focus on automotive engineering, 
+        sustainable mobility solutions, and motorsports. I thrive in collaborative environments where I can apply 
+        my analytical skills and engineering background to drive successful project outcomes.
+    </p>
+</div>
             </div>
         </section>
         <!-- Education Section -->
