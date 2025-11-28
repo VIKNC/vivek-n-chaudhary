@@ -1,217 +1,1607 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Vivek Nandlal Chaudhary - MS Project Management Student & NPD Engineer">
-<title>Vivek Nandlal Chaudhary - Portfolio</title>
-<style>
-:root{--black:#000;--gray:#1a1a1a;--light-gray:#2a2a2a;--white:#fff;--border:rgba(255,255,255,0.1)}*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--black);color:var(--white);overflow-x:hidden;line-height:1.6}.grid-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background-image:linear-gradient(rgba(255,255,255,0.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.02) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;z-index:0}.grid-spotlight{position:fixed;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,0.08) 0%,transparent 70%);pointer-events:none;z-index:1;opacity:0}body::after{content:'';position:fixed;top:0;left:0;width:100%;height:100%;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:0;opacity:0.5}.content{position:relative;z-index:1}.scan-line{position:absolute;width:100%;height:2px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.3),transparent);animation:scan 8s linear infinite}@keyframes scan{0%{transform:translateY(0);opacity:0}10%{opacity:1}90%{opacity:1}100%{transform:translateY(100vh);opacity:0}}.scroll-indicator{position:fixed;top:0;left:0;height:2px;background:var(--white);z-index:9999}.line{position:absolute;background:rgba(255,255,255,0.05)}.line-vertical{width:1px;height:100%;top:0}.line-1{left:20%}.line-2{left:40%}.line-3{left:60%}.line-4{left:80%}header{position:fixed;top:0;width:100%;padding:2rem 3rem;background:rgba(0,0,0,0.8);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);z-index:1000;transition:all 0.3s}header.scrolled{padding:1.2rem 3rem;background:rgba(0,0,0,0.95)}nav{max-width:1400px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}.logo{font-size:1.2rem;font-weight:600;color:var(--white)}.nav-links{display:flex;list-style:none;gap:3rem}.nav-links a{color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.9rem;transition:color 0.3s}.nav-links a:hover{color:var(--white)}.hamburger{display:none;flex-direction:column;cursor:pointer;padding:10px;border:none;background:transparent}.hamburger span{width:25px;height:2px;background:var(--white);margin:3px 0;transition:all 0.3s}.hero{min-height:100vh;display:flex;align-items:center;padding:0 3rem}.hero-content{max-width:900px}.hero-label{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.15em;color:rgba(255,255,255,0.5);margin-bottom:2rem}.hero h1{font-size:5rem;font-weight:600;line-height:1.1;margin-bottom:2rem}.hero h1 .gradient-text{background:linear-gradient(180deg,#fff 0%,#808080 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.hero p{font-size:1.2rem;color:rgba(255,255,255,0.6);max-width:700px;margin-bottom:3rem}.hero-buttons{display:flex;gap:1.5rem;flex-wrap:wrap}.btn{padding:1rem 2rem;font-size:0.9rem;text-decoration:none;transition:all 0.3s;position:relative;overflow:hidden}.btn-primary{background:var(--white);color:var(--black);border:1px solid var(--white)}.btn-primary:hover{color:var(--white)}.btn-secondary{background:transparent;color:var(--white);border:1px solid rgba(255,255,255,0.3)}.btn-secondary:hover{background:var(--white);color:var(--black)}.section{padding:120px 3rem;max-width:1400px;margin:0 auto}.section-header{display:flex;gap:2rem;margin-bottom:4rem}.section-number{font-size:0.85rem;color:rgba(255,255,255,0.4);font-family:monospace}.section-title{font-size:2.5rem;font-weight:600}.card{background:var(--gray);border:1px solid var(--border);padding:3rem;margin-bottom:1.5rem;transition:all 0.3s;position:relative}.card:hover{background:var(--light-gray);border-color:rgba(255,255,255,0.2);transform:translateX(8px)}.card-title{font-size:1.5rem;font-weight:600;margin-bottom:1rem}.card-subtitle{font-size:0.9rem;color:rgba(255,255,255,0.5);margin-bottom:1rem;text-transform:uppercase}.card-description{color:rgba(255,255,255,0.7);line-height:1.7}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:1.5rem}.tag{display:inline-block;padding:0.4rem 1rem;border:1px solid var(--border);font-size:0.75rem;text-transform:uppercase;margin:0.5rem 0.5rem 0 0;transition:all 0.3s}.tag:hover{background:var(--white);color:var(--black)}.profile-card{background:var(--gray);border:1px solid var(--border);padding:2.5rem;text-align:center}.profile-img{width:120px;height:120px;border-radius:50%;background:linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0.05));border:1px solid var(--border);margin:0 auto 1.5rem;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:600}.contact-info{margin:1.5rem 0;font-size:0.85rem;color:rgba(255,255,255,0.6)}.contact-info a{color:var(--white);text-decoration:none}.social-links{display:flex;justify-content:center;gap:0.75rem;margin-top:1.5rem}.social-link{width:40px;height:40px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--white);text-decoration:none;font-size:0.75rem;transition:all 0.3s}.social-link:hover{background:var(--white);color:var(--black)}.skill-list{list-style:none}.skill-list li{padding:0.4rem 0;color:rgba(255,255,255,0.6);padding-left:1.2rem}.skill-list li::before{content:'▶';position:absolute;margin-left:-1.2rem;color:rgba(255,255,255,0.4);font-size:0.6rem}.contact-form{background:var(--gray);border:1px solid var(--border);padding:3rem;max-width:700px;margin:0 auto}.form-group{margin-bottom:1.5rem}.form-group label{display:block;margin-bottom:0.5rem;font-size:0.9rem;text-transform:uppercase}.form-control{width:100%;padding:1rem;border:1px solid var(--border);background:var(--black);color:var(--white);font-family:inherit}.form-control:focus{outline:none;border-color:var(--white)}textarea.form-control{min-height:150px;resize:vertical}.submit-btn{width:100%;background:var(--white);color:var(--black);border:none;padding:1rem;font-size:0.9rem;font-weight:600;cursor:pointer;text-transform:uppercase}.submit-btn:hover{opacity:0.9}.status-bar{position:fixed;bottom:0;width:100%;padding:1rem 3rem;background:rgba(0,0,0,0.9);border-top:1px solid var(--border);display:flex;justify-content:space-between;font-size:0.7rem;color:rgba(255,255,255,0.5);font-family:monospace;z-index:999}@media (max-width:768px){.hamburger{display:flex}.nav-links{display:none}.hero h1{font-size:3rem}.section{padding:80px 1.5rem}.grid{grid-template-columns:1fr}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vivek Nandlal Chaudhary - MS Project Management Student at Northeastern University & New Product Development Engineer with expertise in automotive engineering, CNG motorcycle development, and motorsports.">
+    <meta name="keywords" content="Project Manager, Automotive Engineer, NPD, New Product Development, Bajaj Freedom CNG Motorcycle, Go-Kart Racing, Mechanical Engineering, Northeastern University">
+    <meta name="author" content="Vivek Nandlal Chaudhary">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Vivek Nandlal Chaudhary - Automotive Project Manager & Engineer">
+    <meta property="og:description" content="MS Project Management Student with expertise in automotive NPD, including India's first CNG motorcycle development at Bajaj Auto">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://viveknchaudhary.me">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Vivek Chaudhary - Automotive Engineer & Project Manager">
+    <meta name="twitter:description" content="NPD Engineer specializing in automotive innovation & motorsports">
+    
+    <title>Vivek Nandlal Chaudhary - Tech Project Manager & Automotive Engineer</title>
+    <style>
+        /* CSS Variables */
+        :root {
+            --black: #000000;
+            --dark-gray: #0a0a0a;
+            --gray: #1a1a1a;
+            --light-gray: #2a2a2a;
+            --white: #ffffff;
+            --off-white: #f5f5f5;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+            background: var(--black);
+            color: var(--white);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Interactive Grid Background */
+        .grid-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 40px 40px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Cursor Spotlight Effect */
+        .grid-spotlight {
+            position: fixed;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 1;
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+
+        /* Noise Texture Overlay */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.5;
+        }
+
+        /* Content Container */
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Subtle Scanning Line */
+        .scan-line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: scan 8s linear infinite;
+        }
+
+        @keyframes scan {
+            0% { transform: translateY(0); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(100vh); opacity: 0; }
+        }
+      /* Minimal Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 2rem 3rem;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(20px) saturate(180%);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        header.scrolled {
+            padding: 1.2rem 3rem;
+            background: rgba(0, 0, 0, 0.95);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: var(--white);
+            position: relative;
+        }
+
+        .logo::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--white);
+            transition: width 0.3s ease;
+        }
+
+        .logo:hover::after {
+            width: 100%;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 3rem;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a::before {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--white);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--white);
+        }
+
+        .nav-links a:hover::before {
+            width: 100%;
+        }
+
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            background: transparent;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 2px;
+            background: var(--white);
+            margin: 3px 0;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+      /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 3rem;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            text-align: left;
+        }
+
+        .hero-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .hero h1 {
+            font-size: 5rem;
+            font-weight: 600;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            margin-bottom: 2rem;
+            color: var(--white);
+        }
+
+        .hero h1 .gradient-text {
+            background: linear-gradient(180deg, #ffffff 0%, #808080 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.6);
+            max-width: 700px;
+            margin-bottom: 3rem;
+        }
+
+        /* Minimal Buttons */
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 0;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            letter-spacing: 0.02em;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: var(--white);
+            color: var(--black);
+            border: 1px solid var(--white);
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--black);
+            transition: left 0.3s ease;
+            z-index: -1;
+        }
+
+        .btn-primary:hover {
+            color: var(--white);
+        }
+
+        .btn-primary:hover::before {
+            left: 0;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--black);
+            border-color: var(--white);
+        }
+      /* Section Styling */
+        .section {
+            padding: 120px 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: baseline;
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .section-number {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.4);
+            font-weight: 600;
+            font-family: 'Courier New', monospace;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: var(--white);
+        }
+
+        /* Minimal Cards */
+        .card {
+            background: var(--gray);
+            border: 1px solid var(--border);
+            padding: 3rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Technical Sketches Background */
+        .card::after {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            opacity: 0.03;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--white);
+            transition: width 0.3s ease;
+            z-index: 1;
+        }
+
+        .card:hover {
+            background: var(--light-gray);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateX(8px);
+        }
+
+        .card:hover::after {
+            opacity: 0.08;
+        }
+
+        .card:hover::before {
+            width: 100%;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+            position: relative;
+            z-index: 2;
+        }
+
+        .card-subtitle {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            position: relative;
+            z-index: 2;
+        }
+
+        .card-description {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.7;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+      /* NPD Engineering Card - Enhanced Brake Disc Technical Blueprint */
+        .card.npd-card::after {
+            right: -50px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 320px;
+            height: 320px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cg stroke='%23ffffff' fill='none' stroke-width='0.5'%3E%3Ccircle cx='150' cy='150' r='100' stroke-width='1'/%3E%3Ccircle cx='150' cy='150' r='95'/%3E%3Ccircle cx='150' cy='150' r='75'/%3E%3Ccircle cx='150' cy='150' r='70'/%3E%3Ccircle cx='150' cy='150' r='25' stroke-width='0.8'/%3E%3Ccircle cx='150' cy='150' r='20'/%3E%3Cpath d='M150 55 L150 45 M150 255 L150 245' stroke-width='0.8'/%3E%3Cpath d='M55 150 L45 150 M255 150 L245 150' stroke-width='0.8'/%3E%3Cpath d='M95 95 L88 88 M205 205 L212 212' stroke-width='0.8'/%3E%3Cpath d='M205 95 L212 88 M95 205 L88 212' stroke-width='0.8'/%3E%3Ccircle cx='150' cy='65' r='6' stroke-width='0.8'/%3E%3Ccircle cx='150' cy='235' r='6' stroke-width='0.8'/%3E%3Ccircle cx='65' cy='150' r='6' stroke-width='0.8'/%3E%3Ccircle cx='235' cy='150' r='6' stroke-width='0.8'/%3E%3Ccircle cx='105' cy='105' r='6' stroke-width='0.8'/%3E%3Ccircle cx='195' cy='195' r='6' stroke-width='0.8'/%3E%3Ccircle cx='195' cy='105' r='6' stroke-width='0.8'/%3E%3Ccircle cx='105' cy='195' r='6' stroke-width='0.8'/%3E%3Ccircle cx='150' cy='65' r='3'/%3E%3Ccircle cx='150' cy='235' r='3'/%3E%3Ccircle cx='65' cy='150' r='3'/%3E%3Ccircle cx='235' cy='150' r='3'/%3E%3Cpath d='M150 50 L150 250' stroke-dasharray='4,2' stroke-width='0.3'/%3E%3Cpath d='M50 150 L250 150' stroke-dasharray='4,2' stroke-width='0.3'/%3E%3Cpath d='M150 80 Q155 82 160 80' stroke-dasharray='2,1'/%3E%3Cpath d='M150 85 Q155 87 160 85' stroke-dasharray='2,1'/%3E%3Cpath d='M150 90 Q155 92 160 90' stroke-dasharray='2,1'/%3E%3Cpath d='M140 80 Q135 82 130 80' stroke-dasharray='2,1'/%3E%3Cpath d='M140 85 Q135 87 130 85' stroke-dasharray='2,1'/%3E%3Cpath d='M40 50 L40 250 M35 50 L45 50 M35 250 L45 250' stroke-width='0.3' stroke-dasharray='2,2'/%3E%3Ctext x='15' y='155' font-size='8' fill='%23ffffff' opacity='0.3' font-family='monospace' transform='rotate(-90 15 155)'%3E200mm%3C/text%3E%3Cpath d='M50 40 L250 40 M50 35 L50 45 M250 35 L250 45' stroke-width='0.3' stroke-dasharray='2,2'/%3E%3Ctext x='135' y='32' font-size='8' fill='%23ffffff' opacity='0.3' font-family='monospace'%3E200mm%3C/text%3E%3Cpath d='M195 105 L220 85' stroke-width='0.3' stroke-dasharray='1,1'/%3E%3Ctext x='225' y='85' font-size='6' fill='%23ffffff' opacity='0.3' font-family='monospace'%3EM8 BOLT%3C/text%3E%3Cpath d='M95 75 L75 55' stroke-width='0.3' stroke-dasharray='1,1'/%3E%3Ctext x='45' y='52' font-size='6' fill='%23ffffff' opacity='0.3' font-family='monospace'%3EVENTED%3C/text%3E%3Cpath d='M150 25 L180 10' stroke-width='0.3' stroke-dasharray='1,1'/%3E%3Ctext x='185' y='12' font-size='6' fill='%23ffffff' opacity='0.3' font-family='monospace'%3ECENTRAL HUB%3C/text%3E%3Ctext x='100' y='290' font-size='7' fill='%23ffffff' opacity='0.25' font-family='monospace'%3EMATERIAL: CAST IRON%3C/text%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        /* Go-Kart Card - Enhanced Side View Blueprint */
+        .card.gokart-card::after {
+            right: -30px;
+            bottom: -20px;
+            width: 400px;
+            height: 230px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 450 230'%3E%3Cg stroke='%23ffffff' fill='none' stroke-width='0.5'%3E%3Ccircle cx='110' cy='170' r='45' stroke-width='1'/%3E%3Ccircle cx='340' cy='170' r='45' stroke-width='1'/%3E%3Ccircle cx='110' cy='170' r='35'/%3E%3Ccircle cx='340' cy='170' r='35'/%3E%3Ccircle cx='110' cy='170' r='8'/%3E%3Ccircle cx='340' cy='170' r='8'/%3E%3Cpath d='M110 125 L110 215 M80 170 L140 170' stroke-width='0.3'/%3E%3Cpath d='M340 125 L340 215 M310 170 L370 170' stroke-width='0.3'/%3E%3Cpath d='M92 145 L128 195 M128 145 L92 195' stroke-width='0.3'/%3E%3Cpath d='M322 145 L358 195 M358 145 L322 195' stroke-width='0.3'/%3E%3Cpath d='M155 170 L180 140 L270 140 L295 170' stroke-width='1.2'/%3E%3Cpath d='M155 165 L180 135 L270 135 L295 165' stroke-width='0.8'/%3E%3Cpath d='M190 120 L195 85 L255 85 L260 120 Z' stroke-width='0.8'/%3E%3Cpath d='M195 100 L255 100' stroke-dasharray='3,2' stroke-width='0.3'/%3E%3Cpath d='M195 85 L195 55 L255 55 L255 85' stroke-width='1'/%3E%3Cpath d='M200 60 L250 60' stroke-width='0.6'/%3E%3Ccircle cx='225' cy='70' r='12' stroke-width='0.8'/%3E%3Cpath d='M225 58 L225 82 M213 70 L237 70' stroke-width='0.5'/%3E%3Cpath d='M225 58 L225 45' stroke-width='0.6'/%3E%3Cpath d='M160 155 L155 135 Q150 125 155 115' stroke-width='0.6'/%3E%3Ccircle cx='155' cy='115' r='4'/%3E%3Cpath d='M290 155 L295 135 Q300 125 295 115' stroke-width='0.6'/%3E%3Ccircle cx='295' cy='115' r='4'/%3E%3Cpath d='M152 135 Q148 132 152 129 Q156 126 152 123 Q148 120 152 117' stroke-width='0.4'/%3E%3Cpath d='M298 135 Q302 132 298 129 Q294 126 298 123 Q302 120 298 117' stroke-width='0.4'/%3E%3Crect x='200' y='125' width='15' height='8' rx='2' stroke-width='0.5'/%3E%3Crect x='220' y='125' width='15' height='8' rx='2' stroke-width='0.5'/%3E%3Cpath d='M207 133 L207 140 M227 133 L227 140' stroke-width='0.4'/%3E%3Crect x='260' y='145' width='25' height='20' stroke-width='0.6'/%3E%3Cpath d='M265 150 L265 160 M272 150 L272 160 M279 150 L279 160' stroke-width='0.3'/%3E%3Cpath d='M285 155 L310 165' stroke-width='0.6' stroke-dasharray='2,1'/%3E%3Ccircle cx='313' cy='167' r='5' stroke-width='0.4'/%3E%3Cpath d='M110 30 L340 30 M110 25 L110 35 M340 25 L340 35' stroke-width='0.3' stroke-dasharray='2,2'/%3E%3Ctext x='210' y='22' font-size='8' fill='%23ffffff' opacity='0.3' font-family='monospace'%3EWHEELBASE: 230cm%3C/text%3E%3Cpath d='M40 125 L40 215 M35 125 L45 125 M35 215 L45 215' stroke-width='0.3' stroke-dasharray='2,2'/%3E%3Ctext x='10' y='175' font-size='7' fill='%23ffffff' opacity='0.3' font-family='monospace' transform='rotate(-90 10 175)'%3E90cm%3C/text%3E%3Cpath d='M225 70 L250 50' stroke-width='0.3' stroke-dasharray='1,1'/%3E%3Ctext x='255' y='50' font-size='6' fill='%23ffffff' opacity='0.3' font-family='monospace'%3ESTEERING%3C/text%3E%3Cpath d='M155 115 L130 90' stroke-width='0.3' stroke-dasharray='1,1'/%3E%3Ctext x='95' y='88' font-size='6' fill='%23ffffff' opacity='0.3' font-family='monospace'%3ESUSPENSION%3C/text%3E%3Cpath d='M273 155 L290 175' stroke-width='0.3' stroke-dasharray='1,1'/%3E%3Ctext x='295' y='178' font-size='6' fill='%23ffffff' opacity='0.3' font-family='monospace'%3EENGINE%3C/text%3E%3C/g%3E%3C/svg%3E");
+        }
+      /* Bajaj CNG Card - Enhanced Motorcycle Technical Blueprint */
+        .card.bajaj-card::after {
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 380px;
+            height: 220px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 220'%3E%3Cg stroke='%23ffffff' fill='none' stroke-width='0.5'%3E%3Ccircle cx='90' cy='160' r='40'/%3E%3Ccircle cx='310' cy='160' r='40'/%3E%3Ccircle cx='90' cy='160' r='30'/%3E%3Ccircle cx='310' cy='160' r='30'/%3E%3Ccircle cx='90' cy='160' r='5'/%3E%3Ccircle cx='310' cy='160' r='5'/%3E%3Cpath d='M90 130 L90 190 M60 160 L120 160 M70 135 L110 185 M110 135 L70 185'/%3E%3Cpath d='M310 130 L310 190 M280 160 L340 160 M290 135 L330 185 M330 135 L290 185'/%3E%3Cpath d='M130 160 L160 110 L200 90 L240 90 L280 110 L280 160'/%3E%3Cpath d='M130 155 L160 105 L200 85 L240 85 L280 105'/%3E%3Cpath d='M170 100 L170 80 Q200 75 230 80 L230 100' stroke-width='1'/%3E%3Cpath d='M175 90 L225 90' stroke-dasharray='2,2'/%3E%3Cellipse cx='200' cy='130' rx='35' ry='25' stroke-width='1'/%3E%3Cellipse cx='200' cy='130' rx='32' ry='22' stroke-dasharray='3,2'/%3E%3Cpath d='M170 120 L165 115 M230 120 L235 115' stroke-width='0.8'/%3E%3Crect x='185' y='125' width='30' height='10' rx='2' stroke-width='0.8'/%3E%3Ctext x='188' y='133' font-size='8' fill='%23ffffff' opacity='0.4' font-family='monospace'%3ECNG%3C/text%3E%3Cpath d='M200 155 L200 170 L220 180' stroke-dasharray='2,1'/%3E%3Cpath d='M180 145 L170 155' stroke-dasharray='2,1'/%3E%3Cpath d='M240 90 L250 70 L245 60' stroke-width='0.8'/%3E%3Cpath d='M250 70 L270 70' stroke-width='0.8'/%3E%3Ccircle cx='265' cy='70' r='4'/%3E%3Crect x='150' y='140' width='35' height='25' stroke-width='0.6'/%3E%3Cpath d='M155 145 L155 160 M165 145 L165 160 M175 145 L175 160' stroke-width='0.3'/%3E%3Cpath d='M185 165 L200 175 L240 180 L260 178' stroke-width='0.8'/%3E%3Cellipse cx='260' cy='178' rx='8' ry='5'/%3E%3Cpath d='M130 150 L120 135 M280 150 L290 135' stroke-dasharray='3,2'/%3E%3Ccircle cx='120' cy='135' r='3'/%3E%3Ccircle cx='290' cy='135' r='3'/%3E%3Cpath d='M90 35 L310 35 M90 30 L90 40 M310 30 L310 40' stroke-width='0.3' stroke-dasharray='2,2'/%3E%3Ctext x='185' y='30' font-size='7' fill='%23ffffff' opacity='0.3' font-family='monospace'%3E220cm%3C/text%3E%3Cpath d='M60 160 L30 160 M30 120 L30 160 M25 120 L35 120' stroke-width='0.3' stroke-dasharray='2,2'/%3E%3Ctext x='10' y='145' font-size='7' fill='%23ffffff' opacity='0.3' font-family='monospace' transform='rotate(-90 10 145)'%3E40cm%3C/text%3E%3Cpath d='M200 105 L220 85' stroke-width='0.3' stroke-dasharray='1,1'/%3E%3Ctext x='225' y='85' font-size='6' fill='%23ffffff' opacity='0.3' font-family='monospace'%3ECNG TANK%3C/text%3E%3Cpath d='M260 178 L280 185' stroke-width='0.3' stroke-dasharray='1,1'/%3E%3Ctext x='285' y='188' font-size='6' fill='%23ffffff' opacity='0.3' font-family='monospace'%3EEXHAUST%3C/text%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        /* Project Management Card - Gantt Chart Blueprint */
+        .card.pm-card::after {
+            right: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 350px;
+            height: 280px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 350 280'%3E%3Cg stroke='%23ffffff' fill='none' stroke-width='0.5'%3E%3Cpath d='M50 40 L320 40 M50 80 L320 80 M50 120 L320 120 M50 160 L320 160 M50 200 L320 200 M50 240 L320 240' stroke-width='0.3' stroke-dasharray='2,2'/%3E%3Cpath d='M90 20 L90 260 M130 20 L130 260 M170 20 L170 260 M210 20 L210 260 M250 20 L250 260 M290 20 L290 260' stroke-width='0.3' stroke-dasharray='2,2'/%3E%3Cpath d='M50 20 L320 20 L320 260 L50 260 Z' stroke-width='0.8'/%3E%3Ctext x='65' y='15' font-size='7' fill='%23ffffff' opacity='0.4' font-family='monospace'%3EW1%3C/text%3E%3Ctext x='105' y='15' font-size='7' fill='%23ffffff' opacity='0.4' font-family='monospace'%3EW2%3C/text%3E%3Ctext x='145' y='15' font-size='7' fill='%23ffffff' opacity='0.4' font-family='monospace'%3EW3%3C/text%3E%3Ctext x='185' y='15' font-size='7' fill='%23ffffff' opacity='0.4' font-family='monospace'%3EW4%3C/text%3E%3Ctext x='225' y='15' font-size='7' fill='%23ffffff' opacity='0.4' font-family='monospace'%3EW5%3C/text%3E%3Ctext x='265' y='15' font-size='7' fill='%23ffffff' opacity='0.4' font-family='monospace'%3EW6%3C/text%3E%3Crect x='90' y='45' width='80' height='25' stroke-width='0.6' fill='%23ffffff' fill-opacity='0.05'/%3E%3Ctext x='10' y='60' font-size='6' fill='%23ffffff' opacity='0.35' font-family='monospace'%3EPPAP%3C/text%3E%3Crect x='130' y='85' width='100' height='25' stroke-width='0.6' fill='%23ffffff' fill-opacity='0.05'/%3E%3Ctext x='10' y='100' font-size='6' fill='%23ffffff' opacity='0.35' font-family='monospace'%3EFMEA%3C/text%3E%3Crect x='90' y='125' width='140' height='25' stroke-width='0.6' fill='%23ffffff' fill-opacity='0.08'/%3E%3Ctext x='10' y='140' font-size='6' fill='%23ffffff' opacity='0.35' font-family='monospace'%3EDESIGN%3C/text%3E%3Crect x='170' y='165' width='80' height='25' stroke-width='0.6' fill='%23ffffff' fill-opacity='0.05'/%3E%3Ctext x='10' y='180' font-size='6' fill='%23ffffff' opacity='0.35' font-family='monospace'%3ETEST%3C/text%3E%3Crect x='210' y='205' width='70' height='25' stroke-width='0.6' fill='%23ffffff' fill-opacity='0.05'/%3E%3Ctext x='10' y='220' font-size='6' fill='%23ffffff' opacity='0.35' font-family='monospace'%3EPROD%3C/text%3E%3Cpath d='M170 57 L177 57 L174 62 L170 57 Z' fill='%23ffffff' fill-opacity='0.3'/%3E%3Cpath d='M230 97 L237 97 L234 102 L230 97 Z' fill='%23ffffff' fill-opacity='0.3'/%3E%3Cpath d='M230 137 L237 137 L234 142 L230 137 Z' fill='%23ffffff' fill-opacity='0.3'/%3E%3Cpath d='M250 177 L257 177 L254 182 L250 177 Z' fill='%23ffffff' fill-opacity='0.3'/%3E%3Cpath d='M280 217 L287 217 L284 222 L280 217 Z' fill='%23ffffff' fill-opacity='0.3'/%3E%3Cpath d='M170 70 L170 85 L130 85' stroke-width='0.4' stroke-dasharray='2,1' marker-end='url(%23arrow)'/%3E%3Cpath d='M230 110 L230 125 L170 125' stroke-width='0.4' stroke-dasharray='2,1'/%3E%3Cpath d='M230 150 L230 165 L210 165' stroke-width='0.4' stroke-dasharray='2,1'/%3E%3Crect x='88' y='123' width='144' height='29' stroke='%23ffffff' stroke-width='0.8' fill='none' stroke-dasharray='4,2'/%3E%3Crect x='90' y='45' width='60' height='25' fill='%23ffffff' fill-opacity='0.1'/%3E%3Crect x='130' y='85' width='70' height='25' fill='%23ffffff' fill-opacity='0.1'/%3E%3Crect x='90' y='125' width='100' height='25' fill='%23ffffff' fill-opacity='0.12'/%3E%3Ctext x='240' y='60' font-size='5' fill='%23ffffff' opacity='0.3' font-family='monospace'%3E75%25%3C/text%3E%3Ctext x='240' y='100' font-size='5' fill='%23ffffff' opacity='0.3' font-family='monospace'%3E60%25%3C/text%3E%3Ctext x='240' y='140' font-size='5' fill='%23ffffff' opacity='0.3' font-family='monospace'%3E90%25%3C/text%3E%3Crect x='60' y='250' width='15' height='8' fill='%23ffffff' fill-opacity='0.1' stroke-width='0.3'/%3E%3Ctext x='80' y='257' font-size='5' fill='%23ffffff' opacity='0.3' font-family='monospace'%3ECOMPLETED%3C/text%3E%3Cpath d='M170 253 L177 253 L174 258 L170 253 Z' fill='%23ffffff' fill-opacity='0.3'/%3E%3Ctext x='183' y='257' font-size='5' fill='%23ffffff' opacity='0.3' font-family='monospace'%3EMILESTONE%3C/text%3E%3Cpath d='M250 253 L260 253' stroke-width='0.4' stroke-dasharray='2,1'/%3E%3Ctext x='265' y='257' font-size='5' fill='%23ffffff' opacity='0.3' font-family='monospace'%3EDEPENDENCY%3C/text%3E%3C/g%3E%3C/svg%3E");
+        }
+      /* Minimal Tag */
+        .tag {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border: 1px solid var(--border);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 2;
+        }
+
+        .tag:hover {
+            background: var(--white);
+            color: var(--black);
+            border-color: var(--white);
+        }
+
+        /* About Section Styles */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .profile-card {
+            background: var(--gray);
+            border: 1px solid var(--border);
+            padding: 3rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .profile-card:hover {
+            background: var(--light-gray);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--white), var(--gray));
+            margin: 0 auto 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--black);
+            border: 2px solid var(--border);
+        }
+
+        .profile-card h3 {
+            margin: 2rem 0 1rem 0;
+            font-size: 1.2rem;
+        }
+
+        .contact-info {
+            margin: 1.5rem 0;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .contact-info p {
+            margin: 0.5rem 0;
+        }
+
+        .contact-info a {
+            color: var(--white);
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            opacity: 0.6;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+
+        .social-link:hover {
+            background: var(--white);
+            color: var(--black);
+            border-color: var(--white);
+        }
+
+        .about-text {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.8;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .about-text h3 {
+            color: var(--white);
+            margin: 2rem 0 1rem 0;
+            font-size: 1.3rem;
+        }
+
+        .about-text ul {
+            list-style: none;
+            padding-left: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .about-text li {
+            margin: 0.8rem 0;
+            position: relative;
+        }
+
+        .about-text li::before {
+            content: '▸';
+            position: absolute;
+            left: -1.5rem;
+            color: var(--white);
+        }
+
+        .highlight {
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        /* Education Grid */
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .education-card {
+            background: var(--gray);
+            border: 1px solid var(--border);
+            padding: 3rem;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .education-card:hover {
+            background: var(--light-gray);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .education-card .degree {
+            font-size: 1.4rem;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .education-card .school {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .education-card .year {
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .education-card .details {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            color: var(--white);
+            position: relative;
+            z-index: 2;
+        }
+
+        .skill-list {
+            list-style: none;
+            position: relative;
+            z-index: 2;
+        }
+
+        .skill-list li {
+            padding: 0.5rem 0;
+            color: rgba(255, 255, 255, 0.7);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .skill-list li::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            color: var(--white);
+            font-size: 0.6rem;
+        }
+
+        /* Experience & Timeline */
+        .experience-card {
+            position: relative;
+            z-index: 2;
+        }
+
+        .experience-card h4 {
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .experience-card ul {
+            list-style: none;
+            padding-left: 1.5rem;
+            margin: 1rem 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .experience-card li {
+            margin: 0.8rem 0;
+            position: relative;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .experience-card li::before {
+            content: '•';
+            position: absolute;
+            left: -1.5rem;
+            color: var(--white);
+        }
+
+        /* Certifications List */
+        .certifications-list {
+            background: var(--gray);
+            border: 1px solid var(--border);
+            padding: 3rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .cert-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .cert-item:last-child {
+            border-bottom: none;
+        }
+
+        .cert-item:hover {
+            padding-left: 1rem;
+        }
+
+        .cert-name {
+            color: var(--white);
+            font-weight: 500;
+        }
+
+        .cert-issuer {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.85rem;
+        }
+
+        .cert-link {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.3s ease;
+        }
+
+        .cert-link:hover {
+            color: var(--white);
+        }
+
+        /* Contact Form */
+        .contact-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .contact-form {
+            background: var(--gray);
+            border: 1px solid var(--border);
+            padding: 3rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--white);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid var(--border);
+            background: var(--black);
+            color: var(--white);
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--white);
+        }
+
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: var(--white);
+            color: var(--black);
+            border: 1px solid var(--white);
+            padding: 1rem 2rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .submit-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--black);
+            transition: left 0.3s ease;
+            z-index: -1;
+        }
+
+        .submit-btn:hover {
+            color: var(--white);
+        }
+
+        .submit-btn:hover::before {
+            left: 0;
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+      /* Scroll Progress */
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 2px;
+            background: var(--white);
+            z-index: 9999;
+            transition: width 0.1s ease;
+        }
+
+        /* Status Bar */
+        .status-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 3rem;
+            background: rgba(0, 0, 0, 0.95);
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.5);
+            font-family: 'Courier New', monospace;
+            z-index: 999;
+        }
+
+        /* Floating Lines */
+        .line {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .line-vertical {
+            width: 1px;
+            height: 100%;
+            top: 0;
+        }
+
+        .line-1 { left: 20%; }
+        .line-2 { left: 40%; }
+        .line-3 { left: 60%; }
+        .line-4 { left: 80%; }
+      /* Responsive Design */
+        @media (max-width: 1024px) {
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 1.5rem 1.5rem;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: var(--black);
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 2rem;
+                transition: left 0.3s ease;
+                z-index: 999;
+                border-top: 1px solid var(--border);
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .nav-links li {
+                margin: 1rem 0;
+            }
+
+            .hero {
+                padding: 0 1.5rem;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .section {
+                padding: 80px 1.5rem;
+            }
+
+            .section-header {
+                flex-direction: column;
+                gap: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .card {
+                padding: 2rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .education-grid,
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .status-bar {
+                padding: 1rem 1.5rem;
+                font-size: 0.65rem;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+
+            .profile-img {
+                width: 120px;
+                height: 120px;
+                font-size: 2.5rem;
+            }
+
+            .about-text ul {
+                padding-left: 1rem;
+            }
+
+            /* Hide blueprints on mobile for performance */
+            .card::after {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .card,
+            .contact-form,
+            .profile-card,
+            .education-card {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Selection */
+        ::selection {
+            background: var(--white);
+            color: var(--black);
+        }
+
+        /* Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Focus indicators */
+        .btn:focus-visible,
+        .form-control:focus-visible,
+        .social-link:focus-visible,
+        .nav-links a:focus-visible {
+            outline: 2px solid var(--white);
+            outline-offset: 2px;
+        }
+    </style>
 </head>
 <body>
-<div class="grid-overlay"></div>
-<div class="grid-spotlight" id="spotlight"></div>
-<div class="scan-line"></div>
-<div class="scroll-indicator" id="scroll"></div>
-<div class="line line-vertical line-1"></div>
-<div class="line line-vertical line-2"></div>
-<div class="line line-vertical line-3"></div>
-<div class="line line-vertical line-4"></div>
+    <!-- Interactive Grid Background -->
+    <div class="grid-overlay"></div>
+    <div class="grid-spotlight" id="gridSpotlight"></div>
 
-<div class="content">
-<header id="header">
-<nav>
-<div class="logo">VIVEK CHAUDHARY</div>
-<ul class="nav-links">
-<li><a href="#home">HOME</a></li>
-<li><a href="#about">ABOUT</a></li>
-<li><a href="#education">EDUCATION</a></li>
-<li><a href="#experience">EXPERIENCE</a></li>
-<li><a href="#skills">SKILLS</a></li>
-<li><a href="#projects">PROJECTS</a></li>
-<li><a href="#contact">CONTACT</a></li>
-</ul>
-<button class="hamburger"><span></span><span></span><span></span></button>
-</nav>
-</header>
+    <!-- Scanning Line -->
+    <div class="scan-line"></div>
 
-<section id="home" class="hero">
-<div class="hero-content">
-<div class="hero-label">PROJECT MANAGER × AUTOMOTIVE ENGINEER</div>
-<h1>Building the Future of<br><span class="gradient-text">Automotive Innovation</span></h1>
-<p>Bridging mechanical engineering excellence with strategic project management. Specialized in new product development, CNG motorcycle technology, and motorsports engineering.</p>
-<div class="hero-buttons">
-<a href="#contact" class="btn btn-primary">GET IN TOUCH</a>
-<a href="#projects" class="btn btn-secondary">VIEW WORK</a>
-</div>
-</div>
-</section>
+    <!-- Scroll Progress -->
+    <div class="scroll-indicator"></div>
 
-<section id="about" class="section">
-<div class="section-header">
-<span class="section-number">[01]</span>
-<h2 class="section-title">About</h2>
-</div>
-<div class="grid">
-<div class="profile-card">
-<div class="profile-img">VNC</div>
-<h3>Connect With Me</h3>
-<div class="contact-info">
-<p>📧 <a href="mailto:viveknchaudhary@gmail.com">viveknchaudhary@gmail.com</a></p>
-<p>📱 <a href="tel:+18573511800">+1 (857) 351-1800</a></p>
-<p>📍 Boston, Massachusetts</p>
-</div>
-<div class="social-links">
-<a href="https://linkedin.com/in/vivek-n-chaudhary" class="social-link">LI</a>
-<a href="mailto:viveknchaudhary@gmail.com" class="social-link">EM</a>
-<a href="tel:+18573511800" class="social-link">PH</a>
-</div>
-</div>
-<div class="card">
-<div class="card-subtitle">BACKGROUND</div>
-<h3 class="card-title">MS Project Management Student</h3>
-<p class="card-description">Currently pursuing advanced studies in project management at Northeastern University while leveraging hands-on experience as a New Product Development Engineer. Led development of India's first CNG-powered motorcycle (Bajaj Freedom 125) and championship-winning go-kart designs.</p>
-</div>
-</div>
-</section>
+    <!-- Vertical Lines -->
+    <div class="line line-vertical line-1"></div>
+    <div class="line line-vertical line-2"></div>
+    <div class="line line-vertical line-3"></div>
+    <div class="line line-vertical line-4"></div>
 
-<section id="education" class="section">
-<div class="section-header">
-<span class="section-number">[02]</span>
-<h2 class="section-title">Education</h2>
-</div>
-<div class="grid">
-<div class="card">
-<div style="font-size:1.3rem;font-weight:600;margin-bottom:0.5rem">MS - Project Management</div>
-<div style="color:rgba(255,255,255,0.7);margin-bottom:0.5rem">Northeastern University</div>
-<div style="color:rgba(255,255,255,0.5);margin-bottom:1rem;font-size:0.85rem">PURSUING | EXPECTED 2027</div>
-<div style="color:rgba(255,255,255,0.6);font-size:0.9rem">Focusing on advanced project management methodologies, leadership strategies, and business analytics.</div>
-</div>
-<div class="card">
-<div style="font-size:1.3rem;font-weight:600;margin-bottom:0.5rem">B.E. Mechanical Engineering</div>
-<div style="color:rgba(255,255,255,0.7);margin-bottom:0.5rem">Dr. D.Y. Patil School of Engineering</div>
-<div style="color:rgba(255,255,255,0.5);margin-bottom:1rem;font-size:0.85rem">GRADUATED 2023</div>
-<div style="color:rgba(255,255,255,0.6);font-size:0.9rem">CGPA: 7.25/10 | Specialized in automotive systems and manufacturing processes.</div>
-</div>
-</div>
-</section>
+    <div class="content">
+        <!-- Header -->
+        <header id="header">
+            <nav>
+                <div class="logo">VIVEK CHAUDHARY</div>
+                <ul class="nav-links">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#education">EDUCATION</a></li>
+                    <li><a href="#experience">EXPERIENCE</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#certifications">CERTIFICATIONS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+                <button class="hamburger" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </header>
 
-<section id="experience" class="section">
-<div class="section-header">
-<span class="section-number">[03]</span>
-<h2 class="section-title">Experience</h2>
-</div>
-<div class="card">
-<div class="card-subtitle">SEP 2023 — APR 2024</div>
-<h3 class="card-title">New Product Development Engineer</h3>
-<h4 style="color:rgba(255,255,255,0.6);margin-bottom:1rem">Dhananjay Group</h4>
-<div class="card-description">
-<ul style="padding-left:1.5rem">
-<li>Led product development from RFQ to sample submission, completing 8+ projects within 45-50 day timelines</li>
-<li>Managed PPAP, FMEAs, BOMs, and design documentation</li>
-<li>Applied GD&T principles for precise component manufacturing</li>
-<li>Coordinated with cross-functional teams and suppliers</li>
-</ul>
-</div>
-</div>
-</section>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-label">PROJECT MANAGER × AUTOMOTIVE ENGINEER</div>
+                <h1>
+                    Building the Future of<br>
+                    <span class="gradient-text">Automotive Innovation</span>
+                </h1>
+                <p>
+                    Bridging mechanical engineering excellence with strategic project management. 
+                    Specialized in new product development, CNG motorcycle technology, and motorsports engineering.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">GET IN TOUCH</a>
+                    <a href="#projects" class="btn btn-secondary">VIEW WORK</a>
+                </div>
+            </div>
+        </section>
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="section-header">
+                <span class="section-number">[02]</span>
+                <h2 class="section-title">Education</h2>
+            </div>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="degree">MS - Project Management</div>
+                    <div class="school">Northeastern University College of Professional Studies</div>
+                    <div class="year">Pursuing | Expected 2027</div>
+                    <div class="details">
+                        Focusing on advanced project management methodologies, leadership strategies, 
+                        and business analytics with applications in technology and engineering sectors.
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="degree">B.E. Mechanical Engineering</div>
+                    <div class="school">Dr. D.Y. Patil School of Engineering (SPPU)</div>
+                    <div class="year">Graduated 2023</div>
+                    <div class="details">
+                        CGPA: 7.25/10 | Specialized in automotive systems, manufacturing processes, 
+                        and product design with hands-on experience in CAD software and engineering analysis.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="section-header">
+                <span class="section-number">[03]</span>
+                <h2 class="section-title">Professional Experience</h2>
+            </div>
+            <div class="card npd-card experience-card">
+                <div class="card-subtitle">SEPTEMBER 2023 — APRIL 2024</div>
+                <h3 class="card-title">New Product Development Engineer</h3>
+                <h4>Dhananjay Group</h4>
+                <div class="card-description">
+                    <ul>
+                        <li>Led product development lifecycle from RFQ to sample submission, successfully completing over <strong>8 projects within 45-50 day timelines</strong> while collaborating with suppliers for gauges, laser cutting, and heat treatment.</li>
+                        <li>Attended daily new product status meetings and led design reviews for over <strong>10 concurrent projects</strong>, coordinating feasibility and execution planning with design and manufacturing teams.</li>
+                        <li>Evaluated project plans and provided feedback on quality assurance tasks, deadlines, and milestones to ensure optimal project delivery.</li>
+                        <li>Managed comprehensive project documentation including <strong>PPAP, Design Reviews, BOMs, FMEAs</strong>, design specifications, testing protocols, and compliance records.</li>
+                        <li>Collaborated closely with cross-functional teams to resolve DFM (Design for Manufacturing) issues and ensure production feasibility while aligning gauge development with supplier capabilities.</li>
+                        <li>Applied <strong>GD&T (Geometric Dimensioning & Tolerancing)</strong> principles to ensure precise component fit, form, and function in manufacturing and assembly processes.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-header">
+                <span class="section-number">[04]</span>
+                <h2 class="section-title">Technical Skills & Expertise</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="card skill-card">
+                    <h3>Mechanical Design & Simulation</h3>
+                    <ul class="skill-list">
+                        <li>PTC Creo (Advanced)</li>
+                        <li>CATIA (Proficient)</li>
+                        <li>Blender (3D Modeling)</li>
+                        <li>ANSYS (Simulation)</li>
+                        <li>GD&T (Geometric Dimensioning)</li>
+                        <li>CAD Design & Analysis</li>
+                    </ul>
+                </div>
+                <div class="card skill-card">
+                    <h3>Product Development & Quality</h3>
+                    <ul class="skill-list">
+                        <li>PPAP (Production Part Approval)</li>
+                        <li>FMEA (Failure Mode Analysis)</li>
+                        <li>BOMs (Bill of Materials)</li>
+                        <li>Design Reviews (DR)</li>
+                        <li>Compliance Records</li>
+                        <li>Design Validation</li>
+                    </ul>
+                </div>
+                <div class="card skill-card">
+                    <h3>Project Management</h3>
+                    <ul class="skill-list">
+                        <li>MS Project (Gantt Charts, WBS)</li>
+                        <li>Risk Management & Mitigation</li>
+                        <li>Agile & Hybrid Methodologies</li>
+                        <li>Earned Value Management (EVM)</li>
+                        <li>Stakeholder Communication</li>
+                        <li>Cross-functional Leadership</li>
+                    </ul>
+                </div>
+                <div class="card skill-card">
+                    <h3>Programming & Automation</h3>
+                    <ul class="skill-list">
+                        <li>Python (Programming)</li>
+                        <li>RPA (Robotic Process Automation)</li>
+                        <li>Data Analysis</li>
+                        <li>Process Optimization</li>
+                        <li>Technical Documentation</li>
+                        <li>Problem-Solving</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <span class="section-number">[05]</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="grid">
+                <!-- Bajaj Freedom Project -->
+                <div class="card bajaj-card">
+                    <div class="card-subtitle">AUTOMOTIVE • CNG TECHNOLOGY</div>
+                    <h3 class="card-title">Bajaj Freedom 125 - CNG Motorcycle Development</h3>
+                    <p class="card-description">
+                        Led new product development for India's first CNG-powered motorcycle, coordinating cross-functional teams 
+                        through RFQ to production sample submission. Managed supplier relationships and quality documentation for 
+                        this groundbreaking sustainable mobility solution.
+                    </p>
+                    <div style="margin-top: 1.5rem;">
+                        <span class="tag">NPD Engineering</span>
+                        <span class="tag">CNG Technology</span>
+                        <span class="tag">PPAP</span>
+                        <span class="tag">Supplier Management</span>
+                        <span class="tag">Quality Assurance</span>
+                    </div>
+                    <div style="margin-top: 1.5rem;">
+                        <a href="https://www.bajajauto.com/bikes/bajaj-freedom/bajaj-freedom-125-ng04" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">VIEW PRODUCT →</a>
+                    </div>
+                </div>
 
-<section id="skills" class="section">
-<div class="section-header">
-<span class="section-number">[04]</span>
-<h2 class="section-title">Skills</h2>
-</div>
-<div class="grid">
-<div class="card">
-<h3>Mechanical Design</h3>
-<ul class="skill-list">
-<li>PTC Creo (Advanced)</li>
-<li>CATIA (Proficient)</li>
-<li>ANSYS</li>
-<li>GD&T</li>
-</ul>
-</div>
-<div class="card">
-<h3>Product Development</h3>
-<ul class="skill-list">
-<li>PPAP</li>
-<li>FMEA</li>
-<li>BOMs</li>
-<li>Quality Assurance</li>
-</ul>
-</div>
-<div class="card">
-<h3>Programming</h3>
-<ul class="skill-list">
-<li>Python</li>
-<li>RPA</li>
-<li>Data Analysis</li>
-</ul>
-</div>
-<div class="card">
-<h3>Project Management</h3>
-<ul class="skill-list">
-<li>MS Office 365</li>
-<li>Team Leadership</li>
-<li>Risk Management</li>
-</ul>
-</div>
-</div>
-</section>
+                <!-- Go-Kart Racing Project -->
+                <div class="card gokart-card">
+                    <div class="card-subtitle">MOTORSPORTS • TEAM LEADERSHIP</div>
+                    <h3 class="card-title">High-Performance Go-Kart Design & Manufacturing</h3>
+                    <p class="card-description">
+                        Led a 9-member cross-functional team in designing, manufacturing, and testing a competition-grade go-kart. 
+                        Achieved <strong>3rd place overall</strong> and won <strong>"Best Endurance"</strong> title at Auto India 
+                        Racing Championship 2020 through innovative engineering solutions and strategic team management.
+                    </p>
+                    <div style="margin-top: 1.5rem;">
+                        <span class="tag">Team Leadership</span>
+                        <span class="tag">Vehicle Design</span>
+                        <span class="tag">Performance Testing</span>
+                        <span class="tag">Manufacturing</span>
+                        <span class="tag">Project Management</span>
+                    </div>
+                </div>
 
-<section id="projects" class="section">
-<div class="section-header">
-<span class="section-number">[05]</span>
-<h2 class="section-title">Projects</h2>
-</div>
-<div class="grid">
-<div class="card">
-<div class="card-subtitle">AUTOMOTIVE</div>
-<h3 class="card-title">Bajaj Freedom 125</h3>
-<p class="card-description">Led NPD for India's first CNG-powered motorcycle.</p>
-<div><span class="tag">NPD</span><span class="tag">PPAP</span></div>
-</div>
-<div class="card">
-<div class="card-subtitle">MOTORSPORTS</div>
-<h3 class="card-title">Go-Kart Championship</h3>
-<p class="card-description">3rd place at Auto India Racing Championship 2020.</p>
-<div><span class="tag">Design</span><span class="tag">Leadership</span></div>
-</div>
-</div>
-</section>
+                <!-- SAE-India Go-Kart -->
+                <div class="card gokart-card">
+                    <div class="card-subtitle">MOTORSPORTS • ENGINEERING</div>
+                    <h3 class="card-title">SAE-India Go-Kart Racing Competition</h3>
+                    <p class="card-description">
+                        Successfully designed and manufactured a high-performance go-kart for SAE-India competition in Pune. 
+                        Led a 9-member team in designing, assembling, and analyzing go-kart components, showcasing leadership 
+                        and technical expertise in automotive engineering.
+                    </p>
+                    <div style="margin-top: 1.5rem;">
+                        <span class="tag">SAE Competition</span>
+                        <span class="tag">Automotive Design</span>
+                        <span class="tag">Manufacturing</span>
+                        <span class="tag">Component Analysis</span>
+                    </div>
+                </div>
 
-<section id="contact" class="section">
-<div class="section-header">
-<span class="section-number">[06]</span>
-<h2 class="section-title">Contact</h2>
-</div>
-<form class="contact-form" action="https://formspree.io/f/mrbyagjb" method="POST">
-<div class="form-group">
-<label>Name</label>
-<input type="text" name="name" class="form-control" required>
-</div>
-<div class="form-group">
-<label>Email</label>
-<input type="email" name="email" class="form-control" required>
-</div>
-<div class="form-group">
-<label>Message</label>
-<textarea name="message" class="form-control" required></textarea>
-</div>
-<button type="submit" class="submit-btn">Send Message</button>
-</form>
-</section>
-</div>
+                <!-- Power Generation Project -->
+                <div class="card">
+                    <div class="card-subtitle">INNOVATION • SUSTAINABILITY</div>
+                    <h3 class="card-title">Power Generation Using Vehicle Suspension Motion</h3>
+                    <p class="card-description">
+                        Conceptualized, researched, and designed an innovative gear system to convert two-way linear motion of 
+                        vehicle suspension into unidirectional rotational motion for DC motor power generation. Focused on 
+                        sustainable energy harvesting from vehicular motion.
+                    </p>
+                    <div style="margin-top: 1.5rem;">
+                        <span class="tag">Sustainable Design</span>
+                        <span class="tag">Energy Systems</span>
+                        <span class="tag">Mechanical Design</span>
+                        <span class="tag">Innovation</span>
+                    </div>
+                </div>
 
-<div class="status-bar">
-<div>VIVEK N. CHAUDHARY © 2025</div>
-<div>BOSTON, MA</div>
-<div id="time"></div>
-</div>
+                <!-- Refrigerator Efficiency Project -->
+                <div class="card">
+                    <div class="card-subtitle">INNOVATION • RESEARCH</div>
+                    <h3 class="card-title">Increasing Refrigerator Efficiency Using Vacuum Pumps</h3>
+                    <p class="card-description">
+                        Spearheaded creative planning and collaborated with a resourceful team for theoretical analysis on 
+                        increasing refrigerator efficiency using vacuum pumps. Conducted comprehensive research on thermodynamic 
+                        principles and energy optimization techniques.
+                    </p>
+                    <div style="margin-top: 1.5rem;">
+                        <span class="tag">Thermodynamics</span>
+                        <span class="tag">Energy Optimization</span>
+                        <span class="tag">Research</span>
+                        <span class="tag">Team Collaboration</span>
+                    </div>
+                </div>
+            </div>
+        </section><!-- Certifications Section -->
+        <section id="certifications" class="section">
+            <div class="section-header">
+                <span class="section-number">[06]</span>
+                <h2 class="section-title">Certifications</h2>
+            </div>
+            <div class="certifications-list">
+                <div class="cert-item">
+                    <div>
+                        <div class="cert-name">AI in Project Management</div>
+                        <div class="cert-issuer">Professional Certification</div>
+                    </div>
+                    <a href="https://lnkd.in/dB_7xQCM" class="cert-link" target="_blank" rel="noopener noreferrer">VIEW CERTIFICATE →</a>
+                </div>
+                <div class="cert-item">
+                    <div>
+                        <div class="cert-name">Python Programming</div>
+                        <div class="cert-issuer">University of Michigan (Coursera)</div>
+                    </div>
+                    <span class="cert-link">COMPLETED</span>
+                </div>
+                <div class="cert-item">
+                    <div>
+                        <div class="cert-name">Artificial Intelligence Foundation: Machine Learning</div>
+                        <div class="cert-issuer">LinkedIn Learning</div>
+                    </div>
+                    <span class="cert-link">COMPLETED</span>
+                </div>
+            </div>
+        </section>
+      <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <span class="section-number">[07]</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <form class="contact-form" action="https://formspree.io/f/mrbyagjb" method="POST">
+                    <!-- Essential Formspree hidden fields -->
+                    <input type="hidden" name="_subject" value="New Portfolio Contact from viveknchaudhary.me">
+                    <input type="hidden" name="_replyto" value="viveknchaudhary@gmail.com">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name"
+                            class="form-control" 
+                            placeholder="Your Name" 
+                            required 
+                            aria-label="Your full name"
+                            minlength="2"
+                            maxlength="50"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email"
+                            class="form-control" 
+                            placeholder="your.email@example.com" 
+                            required 
+                            aria-label="Your email address"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input 
+                            type="text" 
+                            id="subject" 
+                            name="subject"
+                            class="form-control" 
+                            placeholder="Project Inquiry / Internship Opportunity" 
+                            aria-label="Email subject"
+                            maxlength="100"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea 
+                            id="message" 
+                            name="message"
+                            class="form-control" 
+                            placeholder="Tell me about your project or opportunity..." 
+                            required 
+                            aria-label="Your message"
+                            minlength="10"
+                            maxlength="1000"
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </div>
+  <!-- Status Bar -->
+    <div class="status-bar">
+        <div>VIVEK N. CHAUDHARY © 2025</div>
+        <div>BOSTON, MA</div>
+        <div id="local-time"></div>
+    </div>
+  <script>
+        // Interactive Grid Spotlight
+        const spotlight = document.getElementById('gridSpotlight');
+        let mouseX = 0, mouseY = 0;
+        let spotlightX = 0, spotlightY = 0;
 
-<script>
-const s=document.getElementById('spotlight');let mx=0,my=0,sx=0,sy=0;document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;s.style.opacity='1'});function a(){sx+=(mx-sx)*0.1;sy+=(my-sy)*0.1;s.style.left=(sx-200)+'px';s.style.top=(sy-200)+'px';requestAnimationFrame(a)}a();window.addEventListener('scroll',()=>{document.getElementById('scroll').style.width=((window.scrollY/(document.documentElement.scrollHeight-window.innerHeight))*100)+'%';document.getElementById('header').classList.toggle('scrolled',window.scrollY>100)});document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){e.preventDefault();const t=document.querySelector(this.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth'})})});function updateTime(){const t=new Date().toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit',hour12:false});document.getElementById('time').textContent=`TIME ${t}`}updateTime();setInterval(updateTime,1000);
-</script>
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            spotlight.style.opacity = '1';
+        });
+
+        // Smooth spotlight movement
+        function animateSpotlight() {
+            spotlightX += (mouseX - spotlightX) * 0.1;
+            spotlightY += (mouseY - spotlightY) * 0.1;
+            
+            spotlight.style.left = (spotlightX - 200) + 'px';
+            spotlight.style.top = (spotlightY - 200) + 'px';
+            
+            requestAnimationFrame(animateSpotlight);
+        }
+        animateSpotlight();
+
+        // Hide spotlight when mouse leaves
+        document.addEventListener('mouseleave', () => {
+            spotlight.style.opacity = '0';
+        });
+
+        // Scroll Progress
+        window.addEventListener('scroll', () => {
+            const winScroll = document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.querySelector('.scroll-indicator').style.width = scrolled + '%';
+        });
+
+        // Header Scroll Effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            const isOpen = navLinks.classList.contains('active');
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            
+            hamburger.setAttribute('aria-expanded', !isOpen);
+            document.body.style.overflow = !isOpen ? 'hidden' : '';
+        });
+
+        // Close mobile menu when link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', false);
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Close mobile menu on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', false);
+                document.body.style.overflow = '';
+                hamburger.focus();
+            }
+        });
+
+        // Close mobile menu on window resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768 && navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', false);
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Local Time Update
+        function updateTime() {
+            const now = new Date();
+            const time = now.toLocaleTimeString('en-US', { 
+                hour: '2-digit', 
+                minute: '2-digit',
+                hour12: false 
+            });
+            document.getElementById('local-time').textContent = `LOCAL TIME ${time}`;
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+
+        // Accessibility - Skip Link
+        const skipLink = document.createElement('a');
+        skipLink.href = '#home';
+        skipLink.textContent = 'Skip to main content';
+        skipLink.style.cssText = `
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--white);
+            color: var(--black);
+            padding: 8px;
+            text-decoration: none;
+            z-index: 10000;
+            transition: top 0.3s;
+        `;
+        skipLink.addEventListener('focus', () => {
+            skipLink.style.top = '6px';
+        });
+        skipLink.addEventListener('blur', () => {
+            skipLink.style.top = '-40px';
+        });
+        document.body.insertBefore(skipLink, document.body.firstChild);
+
+        // Reduced Motion Support
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.documentElement.style.setProperty('--transition-smooth', 'none');
+        }
+    </script>
 </body>
 </html>
+        
