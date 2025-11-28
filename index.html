@@ -274,11 +274,12 @@
             margin-bottom: 3rem;
         }
 
-        /* Minimal Buttons */
+/* Minimal Buttons */
         .hero-buttons {
             display: flex;
             gap: 1.5rem;
             flex-wrap: wrap;
+            align-items: center;
         }
 
         .btn {
@@ -291,6 +292,8 @@
             letter-spacing: 0.02em;
             position: relative;
             overflow: hidden;
+            display: inline-block;
+            white-space: nowrap;
         }
 
         .btn-primary {
@@ -999,13 +1002,15 @@
                 font-size: 1rem;
             }
 
-            .hero-buttons {
+          .hero-buttons {
                 flex-direction: column;
                 width: 100%;
+                align-items: stretch;
             }
 
             .btn {
                 width: 100%;
+                text-align: center;
             }
 
             .section {
